@@ -1,7 +1,14 @@
 # clang-format-as-diff
 view clang-format style like diff
 
-
+use vim with
+```vim
+: e file1.c
+:diffthis
+:vs file2.c
+:diffthis
+:hi DiffChange guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE
+```
 # 1
 ```c
 someLongFunction(argument1,
